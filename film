@@ -1,0 +1,285 @@
+
+
+#!/bin/bash
+
+films=( 'Les évadés 1994' #1 
+	'Le parrain 1972' #2
+	'Le parrain, 2ème partie 1974' #3
+	'The Dark Knight: Le chevalier noir 2008' #4
+	'Douze hommes en colère 1957' #4
+	'La liste de Schindler 1993' #5
+	'Le seigneur des anneaux: Le retour du roi 2003' #7
+	'Pulp Fiction 1994' #8
+	'Le bon, la brute et le truand 1966' #9
+	"Le seigneur des anneaux: La communauté de l'anneau 2001" #10
+	'Fight club 1999' #11
+	'Forrest Gump 1994' #12
+	'Inception 2010' #13
+	"L'empire contre-attaque 1980" #14
+	'Le seigneur des anneaux: Les deux tours 2002' #15
+	'Matrix 1999' #16
+	'Les affranchis 1990' #17
+	"Vol au-dessus d'un nid de coucou 1975" #18
+	'Les sept samouraïs 1954' #19
+	'Seven 1995' #20
+	'La Cité de Dieu 2002' #21
+	'La vie est belle (#22) 1997' #22
+	'Le silence des agneaux 1991' #23
+	'La vie est belle (#24) 1946' #24
+	'La guerre des étoiles 1977' #25
+	'Parasite 2019' #26
+	'Il faut sauver le soldat Ryan 1998' #27
+	'Le voyage de Chihiro 2001' #28
+	'La ligne verte 1999' #29
+	'Joker 2019' #30
+	'Interstellar 2014' #31
+	'Léon 1994' #32
+	'Harakiri 1962' #33
+	'Usual Suspects 1995' #34
+	'Le Roi Lion 1994' #35
+	'American History X 1998' #36
+	'Retour vers le futur 1985' #37
+	'Terminator 2 - Le jugement dernier 1991' #38
+	'Le pianiste 2002' #39
+	'Les temps modernes 1936' #40
+	'1917 2019' #41
+	'Psychose 1960' #42
+	'Gladiator 2000' #43
+	'Les lumières de la ville 1931' #44
+	'Intouchables 2011' #45
+	'Les infiltrés 2006' #46
+	'Whiplash 2014' #47
+	"Il était une fois dans l'Ouest 1968" #48
+	'Le prestige 2006' #49
+	'Casablanca 1942' #50
+	'Le tombeau des lucioles 1988' #51
+	'Fenêtre sur cour 1954' #52
+	'Cinéma Paradiso 1988' #53
+	'Alien - Le 8ème passager 1979' #54
+	"Les aventuriers de l'arche perdue 1981" #55
+	'Apocalypse Now 1979' #56
+	'Memento 2000' #57
+	'Le dictateur 1940' #58
+	'La vie des autres 2006' #59
+	'Django Unchained 2012' #60
+	'Avengers: Endgame 2019' #61
+	'Avengers: Infinity War 2018' #62
+	'Shining 1980' #63
+	'Les sentiers de la gloire 1957' #64
+	'Wall-E 2008' #65
+	'Spider-Man: New Generation 2018' #66
+	'Boulevard du Crépuscule 1950' #67
+	"Princesse Mononoké' 1997" #68
+	"Docteur Folamour, ou: Comment j'ai appris à ne plus m'en faire et à aimer la bombe 1964" #69
+	'Old Boy 2003' #70
+	'Témoin à charge 1957' #71
+	'The Dark Knight Rises 2012' #72
+	'Il était une fois en Amérique 1984' #73
+	'Aliens - Le retour 1986' #74
+	'Your Name. 2016' #75
+	'American Beauty 1999' #76
+	'Coco 2017' #77
+	'Braveheart 1995' #78
+	"Entre le ciel et l'enfer 1963" #79
+	'Le bateau 1981' #80
+	'3 Idiots 2009' #81
+	'Le retour du Jedi 1983' #82
+	'Taare Zameen Par 2007' #83
+	'Toy Story 1995' #84
+	'Amadeus 1984' #85
+	'Reservoir Dogs 1992' #86
+	'Inglourious Basterds 2009' #87
+	'Will Hunting 1997' #88
+	"2001, l'odyssée de l'espace 1968" #89
+	'M le maudit 1931' #90
+	'Requiem for a Dream 2000' #91
+	'Sueurs froides 1958' #92
+	'Dangal 2016' #93
+	'Eternal Sunshine of the Spotless Mind 2004' #94
+	'Citizen Kane 1941' #95
+	'La chasse 2012' #96
+	'Full Metal Jacket 1987' #97
+	'La mort aux trousses 1959' #98
+	'Orange mécanique 1971' #99
+	'Snatch - Tu braques ou tu raques 2000' #100
+	'Le Kid 1921' #101
+	'Le voleur de bicyclette 1948' #102
+	'Scarface 1983' #103
+	'Chantons sous la pluie 1952' #104
+	"Le fabuleux destin d'Amélie Poulain 2001" #105
+	'Taxi Driver 1976' #106
+	"Lawrence d'Arabie 1962" #107
+	'Toy Story 3 2010' #108
+	"L'arnaque 1973" #109
+	'Metropolis 1927' #110
+	'Capharnaüm 2018' #111
+	'Et pour quelques dollars de plus 1965' #112
+	'Une séparation 2011' #113
+	'Vivre 1952' #114
+	'Assurance sur la mort 1944' #115
+	'Du silence et des ombres... 1962' #116
+	'La garçonnière 1960' #117
+	'Indiana Jones et la dernière croisade 1989' #118
+	'Là-haut 2009' #119 corr
+	'Incendies 2010' #120
+	'L.A. Confidential 1997' #121
+	'Monty Python, sacré Graal 1975' #122 corr
+	'Heat 1995' #123
+	'Piège de cristal 1988' #124 corr
+	'Rashômon 1950' #125
+	'Le garde du corps 1961' #126
+	'Batman Begins 2005' #127
+	'Impitoyable 1992' #128
+	'Green Book: Sur les routes du sud 2018' #129
+	'La chute 2004' #130 ---------- corr intense avant ici
+	'Les enfants du ciel 1997' #131
+	"Certains l'aiment chaud 1959" #132
+	'Le château ambulant 2004' #133
+	'Mon voisin Totoro 1988' #134
+	'La grande évasion 1963' #135
+	'Ran 1985' #136
+	'Ève 1950' #137
+	"Un homme d'exception 2001" #138
+	'Requiem pour un massacre 1985' #139
+	'Le Mans 66 2019' #140
+	'Casino 1995' #141
+	'Le labyrinthe de Pan 2006' #142
+	'Raging Bull 1980' #143
+	'Dans ses yeux 2009' #144
+	'Arnaques, crimes et botanique 1998' #145
+	'Le loup de Wall Street 2013' #146
+	'Le trésor de la Sierra Madre 1948' #147
+	'Jugement à Nuremberg 1961' #148
+	'3 Billboards: Les panneaux de la vengeance 2017' #149
+	'Mon père et mon fils 2005' #150
+	'Chinatown 1974' #151
+	"La ruée vers l'or 1925" #152
+	'There Will be Blood 2007' #153
+	'Le crime était presque parfait 1954' #154
+	'V pour vendetta 2005' #155
+	'Vice-versa 2015' #156
+	'Le septième sceau 1957' #157
+	'Warrior 2011' #158
+	"No Country for Old men - Non, ce pays n'est pas pour le vieil homme 2007" #159
+	'Trainspotting 1996' #160
+	'Elephant Man 1980' #161
+	'Room 2015' #162
+	'Shutter Island 2010' #163
+	'Sixième sens 1999' #164
+	'The Thing 1982' #165
+	'Autant en emporte le vent 1939' #166
+	'Blade Runner 1982' #167
+	'Le pont de la rivière Kwaï 1957' #168
+	'Jurassic Park 1993' #169
+	'Le troisième homme 1949' #170
+	'Sur les quais 1954' #171
+	'Le monde de Nemo 2003' #172
+	'Les fraises sauvages 1957' #173
+	'La légende de Klaus 2019' #174
+	'Andhadhun 2018' #175
+	'Fargo 1996' #176
+	'Gran Torino 2008' #177
+	'Kill Bill: Volume I 2003' #178
+	"Voyage au bout de l'enfer 1978" #179
+	'Eskiya le bandit 1996' #180
+	'Voyage à Tokyo 1953' #181
+	'The Truman Show 1998' #182
+	'Stalker 1979' #183
+	'Les nouveaux sauvages 2014' #184
+	'The Big Lebowski 1998' #185
+	'Mary et Max. 2009' #186
+	'Au nom du père 1993' #187
+	'Memories of Murder 2003' #188
+	'Gone Girl 2014' #189
+	'Tu ne tueras point 2016' #190
+	'Mr. Smith au sénat 1939' #191
+	'Le mécano de la Générale 1926' #192
+	'Dragons 2010' #193
+	'The Grand Budapest hotel 2014' #194
+	'Sherlock Junior 1924' #195
+	'Persona 1966' #196
+	'Before Sunrise 1995' #197
+	'Arrête-moi si tu peux 2002' #198
+	'Marriage Story 2019' #199
+	'Prisoners 2013' #200
+	'12 Years a Slave 2013' #201
+	'Luke la main froide 1967' #202
+	'Into the Wild 2007' #203
+	'Le salaire de la peur 1953' #204
+	'Network - Main basse sur la TV 1976' #205
+	'Stand by me - Compte sur moi 1986' #206
+	'Mad Max: Fury Road 2015' #207
+	'Monty Python: La Vie de Brian 1979' #208
+	'Platoon 1986' #209
+	'Barry Lyndon 1975' #210
+	'Million Dollar Baby 2004' #211
+	"La passion de Jeanne d'Arc 1928" #212
+	'Hatchi 2009' #213
+	'Rush 2013' #214
+	'Logan 2017' #215
+	'Ben-Hur 1959' #216
+	'Rang de Basanti 2006' #217
+	'Andreï Roublev 1966' #218
+	'Nausicaä de la vallée du vent 1984' #219
+	'Harry Potter et les reliques de la mort: Partie 2 2011' #220
+	'Les quatre cents coups 1959' #221
+	'Le cercle des poètes disparus 1989' #222
+	'Hôtel Rwanda 2004' #223
+	'Amours chiennes 2000' #224
+	'Spotlight 2015' #225
+	'Les chaussons rouges 1948' #226
+	'Rebecca 1940' #227
+	'Rocky 1976' #228
+	'Mademoiselle 2016' #229
+	'Le gouffre aux chimères 1951' #230
+	'Monstres & Cie 2001' #231
+	"L'enfer est à lui 1949" #232
+	'La haine 1995'	#233
+	'New York - Miami 1934' #234
+	'Lagaan 2001' #235
+	'Princess Bride 1987' #236
+	'Gangs of Wasseypur 2012' #237
+	'Before Sunset 2004' #238
+	'In the Mood for Love 2000' #239
+	'La couleur des sentiments 2011' #240
+	'Butch Cassidy et le Kid 1969' #241
+	'Terminator 1984' #242
+	'P.K. 2014' #243
+	'Akira 1988' #244
+	'Paris, Texas 1984' #245
+	'Aladdin 1992' #246
+	"L'accusé 2016" #247
+	'Drishyam 2013' #248
+	'Neon Genesis Evangelion: The End of Evangelion 1997' #249
+	'Le château dans le ciel 1986' #250
+)
+
+RED='\033[0;31m'
+CYAN='\033[0;36m'
+NC='\033[0m' # no color
+
+longueur=${#films[@]}
+randomNum=$((1 + RANDOM % $longueur))
+
+currentString=${films[$randomNum - 1]}
+currentYear=${currentString: -4}
+lenStr=${#currentString}
+currentFilm=${currentString: 0:$lenStr-4}
+
+printf "${CYAN}$currentFilm${NC} -> en quelle annee?\n"
+
+read input
+
+if [ "$input" == "$currentYear" ]; then
+	echo "$currentYear indeed BRAVO"
+else
+	printf "${CYAN}$currentYear${NC} was the right answer, lache pas buddy\n"
+fi
+
+echo "#$randomNum"
+
+
+
+#declare -A films
+#films=( ['Pulp Fiction']='1994' ['Le bon, la brute et le truand']='1966' )
+#echo "${films['Pulp Fiction
