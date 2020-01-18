@@ -6,7 +6,7 @@ Download this script and call it within its folder:
 ``$ bash film``
 
 # How to install (second method)
-Download this script and put it in /usr/local/bin like a badass, then give it the permissions to run like a badass.
+Download this script and put it in /usr/local/bin , then give it the permissions to run like a badass.
 
 ``$ sudo cp film /usr/local/bin``
 
