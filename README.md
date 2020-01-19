@@ -8,7 +8,7 @@ Just download this script. Call it within its folder:
 ``$ bash film``
 
 ## As a command
-Download this script and put it in /usr/local/bin , then give it the permissions to run like a badass.
+Download this script and put it in /usr/local/bin and go there, then give it permission to be run as a command.
 
 ``$ sudo cp film /usr/local/bin; cd !$``
 
