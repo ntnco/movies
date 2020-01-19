@@ -10,7 +10,7 @@ Just download this script. Call it within its folder:
 ## As a command
 Download this script and put it in /usr/local/bin , then give it the permissions to run like a badass.
 
-``$ sudo cp film /usr/local/bin``
+``$ sudo cp film /usr/local/bin; cd !$``
 
 ``$ sudo chmod 755 film``
 
