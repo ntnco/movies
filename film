@@ -2,6 +2,18 @@
 
 #!/bin/bash
 
+cass=".------------------------.\n"
+cass="$cass|\\\\////////               |\n"
+cass="$cass| \/  __  ______  __     |\n"
+cass="$cass|    /  \|\.....|/  \    |\n"
+cass="$cass|    \__/|/_____|\__/    |\n"
+cass="$cass| Amazing                |\n"
+cass="$cass|    ________________    |\n"
+cass="$cass|___/_._o________o_._\___|\n"
+# art by Conspiracy Duck
+
+printf "$cassTop"
+
 films=( 'Les évadés 1994' #1 
 	'Le parrain 1972' #2
 	'Le parrain, 2ème partie 1974' #3
@@ -131,7 +143,7 @@ films=( 'Les évadés 1994' #1
 	'Batman Begins 2005' #127
 	'Impitoyable 1992' #128
 	'Green Book: Sur les routes du sud 2018' #129
-	'La chute 2004' #130 ---------- corr intense avant ici
+	'La chute 2004' #130
 	'Les enfants du ciel 1997' #131
 	"Certains l'aiment chaud 1959" #132
 	'Le château ambulant 2004' #133
@@ -261,25 +273,45 @@ NC='\033[0m' # no color
 longueur=${#films[@]}
 randomNum=$((1 + RANDOM % $longueur))
 
-currentString=${films[$randomNum - 1]}
-currentYear=${currentString: -4}
-lenStr=${#currentString}
-currentFilm=${currentString: 0:$lenStr-4}
+currentNum=$(($randomNum - 1))
+note=0
 
-printf "${CYAN}$currentFilm${NC} -> en quelle annee?\n"
 
-read input
-
-if [ "$input" == "$currentYear" ]; then
-	echo "$currentYear indeed BRAVO"
-else
-	printf "${CYAN}$currentYear${NC} was the right answer, lache pas buddy\n"
+if [ $# -gt 0 ]; then
+	numDemande="$1"
+else 
+	numDemande=10
 fi
 
-echo "#$randomNum"
+numQuestions=$numDemande
+
+while [ $numQuestions -gt 0 ]
+do
+	currentString=${films[currentNum]}
+	currentYear=${currentString: -4}
+	lenStr=${#currentString}
+	currentFilm=${currentString: 0:$lenStr-4}
+
+	printf "\n${CYAN}$currentFilm${NC} -> quelle année?\n"
+
+	read input
+
+	if [ "$input" == "$currentYear" ]; then
+		echo "$currentYear oui!"
+		note=$(( $note + 1 )) 
+	else
+		printf "${CYAN}$currentYear${NC} was the right answer\n"
+	fi
+
+	echo "#$(($currentNum + 1))"
+	currentNum=$((($currentNum + 1) % longueur))
+numQuestions=$(($numQuestions - 1))
+done
+
+printf "\n$note /$numDemande\n"
 
 
+if [ $note == $numDemande ]; then 
+	printf "$cass"
+fi
 
-#declare -A films
-#films=( ['Pulp Fiction']='1994' ['Le bon, la brute et le truand']='1966' )
-#echo "${films['Pulp Fiction
