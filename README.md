@@ -1,5 +1,5 @@
 ## Description
-bash-only script to practice for the movies contest in 1 week
+bash-only script to memorize movies' release years
 
 # Installing
 
