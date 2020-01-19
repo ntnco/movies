@@ -4,11 +4,11 @@ bash-only script to memorize movies' release years
 # Installing
 
 ## As a local script
-Just download this script. Call it within its folder:
+Just download this script, call it within its folder:
 ``$ bash film``
 
 ## As a command
-Download this script and put it in /usr/local/bin and go there, then give it permission to be run as a command.
+After download, you can use the following commands to put it in /usr/local/bin and go there, then give permission to be run as a command.
 
 ``$ sudo cp film /usr/local/bin; cd !$``
 
