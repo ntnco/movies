@@ -14,16 +14,16 @@ cass="$cass|___/_._o________o_._\___|\n"
 
 printf "$cassTop"
 
-films=( 'Les évadés 1994' #1 
+films=( 'Les Ã©vadÃ©s 1994' #1 
 	'Le parrain 1972' #2
-	'Le parrain, 2ème partie 1974' #3
+	'Le parrain, 2Ã¨me partie 1974' #3
 	'The Dark Knight: Le chevalier noir 2008' #4
-	'Douze hommes en colère 1957' #4
+	'Douze hommes en colÃ¨re 1957' #4
 	'La liste de Schindler 1993' #5
 	'Le seigneur des anneaux: Le retour du roi 2003' #7
 	'Pulp Fiction 1994' #8
 	'Le bon, la brute et le truand 1966' #9
-	"Le seigneur des anneaux: La communauté de l'anneau 2001" #10
+	"Le seigneur des anneaux: La communautÃ© de l'anneau 2001" #10
 	'Fight club 1999' #11
 	'Forrest Gump 1994' #12
 	'Inception 2010' #13
@@ -32,20 +32,20 @@ films=( 'Les évadés 1994' #1
 	'Matrix 1999' #16
 	'Les affranchis 1990' #17
 	"Vol au-dessus d'un nid de coucou 1975" #18
-	'Les sept samouraïs 1954' #19
+	'Les sept samouraÃ¯s 1954' #19
 	'Seven 1995' #20
-	'La Cité de Dieu 2002' #21
+	'La CitÃ© de Dieu 2002' #21
 	'La vie est belle (#22) 1997' #22
 	'Le silence des agneaux 1991' #23
 	'La vie est belle (#24) 1946' #24
-	'La guerre des étoiles 1977' #25
+	'La guerre des Ã©toiles 1977' #25
 	'Parasite 2019' #26
 	'Il faut sauver le soldat Ryan 1998' #27
 	'Le voyage de Chihiro 2001' #28
 	'La ligne verte 1999' #29
 	'Joker 2019' #30
 	'Interstellar 2014' #31
-	'Léon 1994' #32
+	'LÃ©on 1994' #32
 	'Harakiri 1962' #33
 	'Usual Suspects 1995' #34
 	'Le Roi Lion 1994' #35
@@ -57,17 +57,17 @@ films=( 'Les évadés 1994' #1
 	'1917 2019' #41
 	'Psychose 1960' #42
 	'Gladiator 2000' #43
-	'Les lumières de la ville 1931' #44
+	'Les lumiÃ¨res de la ville 1931' #44
 	'Intouchables 2011' #45
-	'Les infiltrés 2006' #46
+	'Les infiltrÃ©s 2006' #46
 	'Whiplash 2014' #47
-	"Il était une fois dans l'Ouest 1968" #48
+	"Il Ã©tait une fois dans l'Ouest 1968" #48
 	'Le prestige 2006' #49
 	'Casablanca 1942' #50
 	'Le tombeau des lucioles 1988' #51
-	'Fenêtre sur cour 1954' #52
-	'Cinéma Paradiso 1988' #53
-	'Alien - Le 8ème passager 1979' #54
+	'FenÃªtre sur cour 1954' #52
+	'CinÃ©ma Paradiso 1988' #53
+	'Alien - Le 8Ã¨me passager 1979' #54
 	"Les aventuriers de l'arche perdue 1981" #55
 	'Apocalypse Now 1979' #56
 	'Memento 2000' #57
@@ -80,13 +80,13 @@ films=( 'Les évadés 1994' #1
 	'Les sentiers de la gloire 1957' #64
 	'Wall-E 2008' #65
 	'Spider-Man: New Generation 2018' #66
-	'Boulevard du Crépuscule 1950' #67
-	"Princesse Mononoké 1997" #68
-	"Docteur Folamour, ou: Comment j'ai appris à ne plus m'en faire et à aimer la bombe 1964" #69
+	'Boulevard du CrÃ©puscule 1950' #67
+	"Princesse MononokÃ© 1997" #68
+	"Docteur Folamour, ou: Comment j'ai appris Ã  ne plus m'en faire et Ã  aimer la bombe 1964" #69
 	'Old Boy 2003' #70
-	'Témoin à charge 1957' #71
+	'TÃ©moin Ã  charge 1957' #71
 	'The Dark Knight Rises 2012' #72
-	'Il était une fois en Amérique 1984' #73
+	'Il Ã©tait une fois en AmÃ©rique 1984' #73
 	'Aliens - Le retour 1986' #74
 	'Your Name. 2016' #75
 	'American Beauty 1999' #76
@@ -102,7 +102,7 @@ films=( 'Les évadés 1994' #1
 	'Reservoir Dogs 1992' #86
 	'Inglourious Basterds 2009' #87
 	'Will Hunting 1997' #88
-	"2001, l'odyssée de l'espace 1968" #89
+	"2001, l'odyssÃ©e de l'espace 1968" #89
 	'M le maudit 1931' #90
 	'Requiem for a Dream 2000' #91
 	'Sueurs froides 1958' #92
@@ -112,33 +112,33 @@ films=( 'Les évadés 1994' #1
 	'La chasse 2012' #96
 	'Full Metal Jacket 1987' #97
 	'La mort aux trousses 1959' #98
-	'Orange mécanique 1971' #99
+	'Orange mÃ©canique 1971' #99
 	'Snatch - Tu braques ou tu raques 2000' #100
 	'Le Kid 1921' #101
 	'Le voleur de bicyclette 1948' #102
 	'Scarface 1983' #103
 	'Chantons sous la pluie 1952' #104
-	"Le fabuleux destin d'Amélie Poulain 2001" #105
+	"Le fabuleux destin d'AmÃ©lie Poulain 2001" #105
 	'Taxi Driver 1976' #106
 	"Lawrence d'Arabie 1962" #107
 	'Toy Story 3 2010' #108
 	"L'arnaque 1973" #109
 	'Metropolis 1927' #110
-	'Capharnaüm 2018' #111
+	'CapharnaÃ¼m 2018' #111
 	'Et pour quelques dollars de plus 1965' #112
-	'Une séparation 2011' #113
+	'Une sÃ©paration 2011' #113
 	'Vivre 1952' #114
 	'Assurance sur la mort 1944' #115
 	'Du silence et des ombres... 1962' #116
-	'La garçonnière 1960' #117
-	'Indiana Jones et la dernière croisade 1989' #118
-	'Là-haut 2009' #119 corr
+	'La garÃ§onniÃ¨re 1960' #117
+	'Indiana Jones et la derniÃ¨re croisade 1989' #118
+	'LÃ -haut 2009' #119 corr
 	'Incendies 2010' #120
 	'L.A. Confidential 1997' #121
-	'Monty Python, sacré Graal 1975' #122 corr
+	'Monty Python, sacrÃ© Graal 1975' #122 corr
 	'Heat 1995' #123
-	'Piège de cristal 1988' #124 corr
-	'Rashômon 1950' #125
+	'PiÃ¨ge de cristal 1988' #124 corr
+	'RashÃ´mon 1950' #125
 	'Le garde du corps 1961' #126
 	'Batman Begins 2005' #127
 	'Impitoyable 1992' #128
@@ -146,11 +146,11 @@ films=( 'Les évadés 1994' #1
 	'La chute 2004' #130
 	'Les enfants du ciel 1997' #131
 	"Certains l'aiment chaud 1959" #132
-	'Le château ambulant 2004' #133
+	'Le chÃ¢teau ambulant 2004' #133
 	'Mon voisin Totoro 1988' #134
-	'La grande évasion 1963' #135
+	'La grande Ã©vasion 1963' #135
 	'Ran 1985' #136
-	'Ève 1950' #137
+	'Ãˆve 1950' #137
 	"Un homme d'exception 2001" #138
 	'Requiem pour un massacre 1985' #139
 	'Le Mans 66 2019' #140
@@ -160,58 +160,58 @@ films=( 'Les évadés 1994' #1
 	'Dans ses yeux 2009' #144
 	'Arnaques, crimes et botanique 1998' #145
 	'Le loup de Wall Street 2013' #146
-	'Le trésor de la Sierra Madre 1948' #147
-	'Jugement à Nuremberg 1961' #148
+	'Le trÃ©sor de la Sierra Madre 1948' #147
+	'Jugement Ã  Nuremberg 1961' #148
 	'3 Billboards: Les panneaux de la vengeance 2017' #149
-	'Mon père et mon fils 2005' #150
+	'Mon pÃ¨re et mon fils 2005' #150
 	'Chinatown 1974' #151
-	"La ruée vers l'or 1925" #152
+	"La ruÃ©e vers l'or 1925" #152
 	'There Will be Blood 2007' #153
-	'Le crime était presque parfait 1954' #154
+	'Le crime Ã©tait presque parfait 1954' #154
 	'V pour vendetta 2005' #155
 	'Vice-versa 2015' #156
-	'Le septième sceau 1957' #157
+	'Le septiÃ¨me sceau 1957' #157
 	'Warrior 2011' #158
 	"No Country for Old men - Non, ce pays n'est pas pour le vieil homme 2007" #159
 	'Trainspotting 1996' #160
 	'Elephant Man 1980' #161
 	'Room 2015' #162
 	'Shutter Island 2010' #163
-	'Sixième sens 1999' #164
+	'SixiÃ¨me sens 1999' #164
 	'The Thing 1982' #165
 	'Autant en emporte le vent 1939' #166
 	'Blade Runner 1982' #167
-	'Le pont de la rivière Kwaï 1957' #168
+	'Le pont de la riviÃ¨re KwaÃ¯ 1957' #168
 	'Jurassic Park 1993' #169
-	'Le troisième homme 1949' #170
+	'Le troisiÃ¨me homme 1949' #170
 	'Sur les quais 1954' #171
 	'Le monde de Nemo 2003' #172
 	'Les fraises sauvages 1957' #173
-	'La légende de Klaus 2019' #174
+	'La lÃ©gende de Klaus 2019' #174
 	'Andhadhun 2018' #175
 	'Fargo 1996' #176
 	'Gran Torino 2008' #177
 	'Kill Bill: Volume I 2003' #178
 	"Voyage au bout de l'enfer 1978" #179
 	'Eskiya le bandit 1996' #180
-	'Voyage à Tokyo 1953' #181
+	'Voyage Ã  Tokyo 1953' #181
 	'The Truman Show 1998' #182
 	'Stalker 1979' #183
 	'Les nouveaux sauvages 2014' #184
 	'The Big Lebowski 1998' #185
 	'Mary et Max. 2009' #186
-	'Au nom du père 1993' #187
+	'Au nom du pÃ¨re 1993' #187
 	'Memories of Murder 2003' #188
 	'Gone Girl 2014' #189
 	'Tu ne tueras point 2016' #190
-	'Mr. Smith au sénat 1939' #191
-	'Le mécano de la Générale 1926' #192
+	'Mr. Smith au sÃ©nat 1939' #191
+	'Le mÃ©cano de la GÃ©nÃ©rale 1926' #192
 	'Dragons 2010' #193
 	'The Grand Budapest hotel 2014' #194
 	'Sherlock Junior 1924' #195
 	'Persona 1966' #196
 	'Before Sunrise 1995' #197
-	'Arrête-moi si tu peux 2002' #198
+	'ArrÃªte-moi si tu peux 2002' #198
 	'Marriage Story 2019' #199
 	'Prisoners 2013' #200
 	'12 Years a Slave 2013' #201
@@ -231,21 +231,21 @@ films=( 'Les évadés 1994' #1
 	'Logan 2017' #215
 	'Ben-Hur 1959' #216
 	'Rang de Basanti 2006' #217
-	'Andreï Roublev 1966' #218
-	'Nausicaä de la vallée du vent 1984' #219
+	'AndreÃ¯ Roublev 1966' #218
+	'NausicaÃ¤ de la vallÃ©e du vent 1984' #219
 	'Harry Potter et les reliques de la mort: Partie 2 2011' #220
 	'Les quatre cents coups 1959' #221
-	'Le cercle des poètes disparus 1989' #222
-	'Hôtel Rwanda 2004' #223
+	'Le cercle des poÃ¨tes disparus 1989' #222
+	'HÃ´tel Rwanda 2004' #223
 	'Amours chiennes 2000' #224
 	'Spotlight 2015' #225
 	'Les chaussons rouges 1948' #226
 	'Rebecca 1940' #227
 	'Rocky 1976' #228
 	'Mademoiselle 2016' #229
-	'Le gouffre aux chimères 1951' #230
+	'Le gouffre aux chimÃ¨res 1951' #230
 	'Monstres & Cie 2001' #231
-	"L'enfer est à lui 1949" #232
+	"L'enfer est Ã  lui 1949" #232
 	'La haine 1995'	#233
 	'New York - Miami 1934' #234
 	'Lagaan 2001' #235
@@ -260,10 +260,10 @@ films=( 'Les évadés 1994' #1
 	'Akira 1988' #244
 	'Paris, Texas 1984' #245
 	'Aladdin 1992' #246
-	"L'accusé 2016" #247
+	"L'accusÃ© 2016" #247
 	'Drishyam 2013' #248
 	'Neon Genesis Evangelion: The End of Evangelion 1997' #249
-	'Le château dans le ciel 1986' #250
+	'Le chÃ¢teau dans le ciel 1986' #250
 )
 
 RED='\033[0;31m'
@@ -292,7 +292,7 @@ do
 	lenStr=${#currentString}
 	currentFilm=${currentString: 0:$lenStr-4}
 
-	printf "\n${CYAN}$currentFilm${NC} -> quelle année?\n"
+	printf "\n${CYAN}$currentFilm${NC} -> quelle annÃ©e?\n"
 
 	read input
 
