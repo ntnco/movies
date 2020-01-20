@@ -15,7 +15,7 @@ After download, move to the folder movies, then copy film to /usr/local/bin
 
 then go there
 
-``cd !$``
+``$ cd !$``
 
 then give film permission to be run as a command
 
