@@ -21,7 +21,7 @@ then give film permission to be run as a command
 
 ``$ sudo chmod 755 film``
 
-## Usage
+# Usage
 
 For 10 questions (default)
 
