@@ -1,17 +1,25 @@
-# Description.
-bash-only script to practice for the movies contest in 1 week
+## Description
+bash-only script to memorize movies' release years
 
-# How to install
-Download this script and call it within its folder:
+# Installing
+
+## As a local script
+Just download this script, call it within its folder:
 ``$ bash film``
 
-# How to install (second method)
-Download this script and put it in /usr/local/bin , then give it the permissions to run like a badass.
+## As a command
+After download, you can use the following commands to put it in /usr/local/bin and go there, then give permission to be run as a command.
 
-``$ sudo cp film /usr/local/bin``
+``$ sudo cp film /usr/local/bin; cd !$``
 
 ``$ sudo chmod 755 film``
 
-Then run it:
+## Usage
+
+For 10 questions (default)
 
 ``$ film``
+
+For 100 questions:
+
+``$ film 100`` 
